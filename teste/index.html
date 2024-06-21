@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela com múltiplos TDs</title>
+  <link rel="stylesheet" href="/teste/stuylee.css">
+</head>
+<body>
+    <div class="minhaTabela">
+        <table id="tabelinha"> 
+            <caption>Despesas de Manutenção</caption>
+            <thead> 
+                <tr>
+                    <th>Data</th>
+                    <th>Local</th>
+                    <th>Descrição</th>
+                    <th>Centro Custo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>    
+                <tr id="linhaOriginal">
+                    <tbody id="body">
+                     <td><input type="date" id="date" name="date" placeholder="00-00-00"></td>
+                                <td><input type="text" id="local" name="local" placeholder="Digite"></td>
+                                <td><input type="text" id="drescricao" name="drescricao" placeholder="Digite"></td>
+                                <td><select name="centro-custo" id="centro-custo">
+                                    <option value="valor0">- - Selecione - -</option>
+                                    <option value="valor1">Administrativo</option>
+                                    <option value="valor2">Aprendizagem</option>
+                                    <option value="valor3">Estágio</option>
+                                    <option value="valor4">PROIP</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" id="value" name="value" placeholder="R$"></td>
+                    </tbody>
+                    <tfoot>
+                        <td colspan="4">Total de despesas</td>
+                           <td><input id="total-despesas" type="text" placeholder="R$"></td>
+                            <tr>
+                                <td colspan="4">Saldo do Fundo Fixo</td>
+                                <td><input id="saldo-fundo" type="text" placeholder="R$"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Valor total a depositar ao colaborador</td>
+                                <td><input id="deposito" type="text" placeholder="R$"></td>
+                            </tr>
+                    </tfoot>
+                 </tr>
+            
+        </table>
+    </div>
+      
+
+<script src="/teste/scrpt.js"></script>
+
+</body>
+</html>
+
+<!--
+                        </tbody>
+                        <tfoot>
+                            <td colspan="4">Total de despesas</td>
+                           <td><input type="text" placeholder="R$"></td>
+                            <tr>
+                                <td colspan="4">Saldo do Fundo Fixo</td>
+                                <td><input type="text" placeholder="R$"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Valor total a depositar ao colaborador</td>
+                                <td><input type="text" placeholder="R$"></td>
+                            </tr>
+                        </tfoot>
+                        
+                        
+                    </table>
+
+                </div>
+                <div class="continue-button">
+                <button type="button" id="button"><a href="/public/src/Relatorio/">Entrar</a></button>
+                </div>
+            </div>
+        </div>
+        <script src="/teste/scrpt.js"></script>
+    </body>
+    </html>
+</form>
